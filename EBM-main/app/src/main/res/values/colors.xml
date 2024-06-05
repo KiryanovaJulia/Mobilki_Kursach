@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#A5A5A5</color>
+    <color name="yp_text_gray">#AEAFB4</color>
+    <color name="main_black">#0F0817</color>
+    <color name="main_purple">#C22BB7</color>
+    <color name="favorites_red">#f94449</color>
+</resources>

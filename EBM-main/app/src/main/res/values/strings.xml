@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">EBM</string>
+    <string name="EBM">EBM</string>
+    <string name="subtitle">Learn languages with music</string>
+    <string name="register">Register</string>
+    <string name="continue_text">Continue</string>
+    <string name="Welcome">Welcome back!</string>
+    <string name="what_do_you_want_to_learn_today">What do you want to learn today?</string>
+    <string name="your_favorites">Your favorites</string>
+    <string name="loved">Favorites</string>
+    <string name="top_5_songs">Top 5 songs</string>
+    <string name="top_5_words">Top 5 words</string>
+    <string name="search_results">Search results</string>
+    <string name="title_activity_lyrics">Activity lyrics</string>
+    <string name="learn_the_lyrics">Learn the lyrics</string>
+    <string name="search_history">Search history</string>
+    <string name="zeropos">00:00</string>
+    <string name="thirty_seconds">00:30</string>
+    <string name="email_hint">Yourmail@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="song_lyrics_not_found">Song lyrics not found :(</string>
+    <string name="network_error">Network error :(</string>
+    <string name="nothing_found">Nothing found :(</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="log_in">Log in</string>
+    <string name="register_text">Register</string>
+    <string name="sign_up">Sign up</string>
+    <string name="back_to_sign_in">Back to sign in</string>
+    <string name="password_confirmation">Password confirmation</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="130dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="7dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="130dp"
+    android:id="@+id/playlist_image_iv"
+    android:layout_height="125dp"
+    tools:src="@drawable/example_image"/>
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="16sp"
+        android:lineHeight="16sp"
+        tools:text="Learned"
+        android:fontFamily="@font/open_sans_medium"
+        android:textSize="11sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="?attr/colorOnPrimary"/>
+    <TextView
+        android:id="@+id/subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        tools:text="Explore again"
+        android:textSize="8sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:textColor="@color/light_gray"/>
+
+
+
+
+</LinearLayout>

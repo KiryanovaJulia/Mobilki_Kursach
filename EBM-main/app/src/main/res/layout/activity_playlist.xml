@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".ui.PlaylistActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/top_middle_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/bottom_right_gradient"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:id="@+id/playlist_image_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxHeight="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/favorites_rv"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintDimensionRatio="h,1:1"
+        android:src="@drawable/playlist_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/back_icon"
+        android:background="@null"
+        />
+    <ImageButton
+        android:id="@+id/actions_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/three_dots"
+        android:background="@null"
+        />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/playlist_image_iv"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/playlist_image_iv"
+        app:layout_constraintVertical_bias="0.75"/>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/favorites_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/favorite"
+        app:layout_constraintEnd_toStartOf="@id/play_btn"
+        app:layout_constraintBottom_toBottomOf="@id/play_btn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/track_title"
+        tools:text="Big God"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/playlist_image_iv"
+        app:layout_constraintBottom_toBottomOf="@id/favorites_btn"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_medium"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintVertical_bias="1.0"/>
+    <TextView
+        android:layout_marginStart="10dp"
+        android:textColor="@color/light_gray"
+        android:fontFamily="@font/open_sans_medium"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/track_sub_text"
+        tools:text="Florence + the Machine"
+        app:layout_constraintTop_toBottomOf="@id/track_title"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/playlist_image_iv"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorites_rv"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playlist_image_iv"
+        tools:listitem="@layout/favorite_song_list_item"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

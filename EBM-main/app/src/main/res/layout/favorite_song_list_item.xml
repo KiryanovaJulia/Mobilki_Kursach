@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/track_image_iv"
+        android:forceDarkAllowed="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        tools:src = "@drawable/example_image"
+        />
+    <TextView
+        android:id="@+id/track_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="44dp"
+        tools:text="Bye Bye"
+        android:textColor="?colorOnPrimary"
+        android:fontFamily="@font/open_sans_medium"
+        android:textSize="11sp"
+        android:gravity="top"
+        />
+    <TextView
+        android:id="@+id/track_author"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        tools:text="Marshmello, Juice WRLD"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="60dp"
+        android:textColor="@color/light_gray"
+        android:fontFamily="@font/open_sans_medium"
+        android:textSize="8sp"/>
+    <TextView
+        android:id="@+id/duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        tools:text="2:09"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_medium"
+        android:textSize="9sp"
+        android:layout_marginTop="18dp"/>
+
+</FrameLayout>
